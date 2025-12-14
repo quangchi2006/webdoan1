@@ -1,0 +1,170 @@
+
+/* --- BỐ CỤC CHUNG --- */
+.room-detail-page {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #055699;
+}
+.breadcrumb li::after { content: "/"; margin-left: 10px; color: #ccc; }
+.breadcrumb li:last-child::after { content: ""; }
+.breadcrumb a { color: #055699; font-weight: 500; }
+
+.detail-layout {
+    display: flex;
+    gap: 30px;
+}
+
+.left-col { flex: 2.5; } /* Cột nội dung rộng hơn */
+.right-col { flex: 1; }   /* Cột chủ trọ nhỏ hơn */
+
+/* --- GALLERY ẢNH --- */
+.image-gallery { margin-bottom: 25px; }
+
+.main-img-box {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.main-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.thumb-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.thumb-img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.thumb-img:hover { opacity: 1; border: 2px solid #f73859; }
+
+/* --- THÔNG TIN BÀI ĐĂNG --- */
+.post-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f73859; /* Màu đỏ tiêu đề */
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.star-icon { color: #FFD700; font-size: 20px; }
+
+.post-address { font-size: 15px; margin-bottom: 20px; color: #333; }
+
+.post-meta-bar {
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.meta-item { display: flex; align-items: center; gap: 8px; font-size: 16px; }
+.meta-item.price { color: #f73859; font-weight: bold; font-size: 20px; }
+.meta-item i { color: #999; }
+
+/* --- KHỐI NỘI DUNG (MÔ TẢ, TIỆN ÍCH) --- */
+.section-box { margin-bottom: 30px; }
+.sec-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-left: 4px solid #f73859;
+    padding-left: 10px;
+}
+
+.desc-content { font-size: 15px; line-height: 1.6; color: #333; }
+
+.amenities-list { display: flex; flex-wrap: wrap; gap: 15px; }
+.amenity {
+    background: #f1f1f1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex; align-items: center; gap: 8px;
+}
+.amenity i { color: #055699; }
+
+/* --- SIDEBAR: CHỦ TRỌ --- */
+.author-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: sticky; /* Dính khi cuộn */
+    top: 90px; /* Cách mép trên header */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fdfdfd;
+}
+
+.author-header { display: flex; flex-direction: column; align-items: center; margin-bottom: 15px; }
+.author-header img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; border: 3px solid #eee; }
+.author-info h4 { font-size: 18px; margin-bottom: 5px; }
+
+.contact-buttons a {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-call-big { background: #009e2a; color: white; }
+.btn-call-big:hover { background: #007a21; box-shadow: 0 4px 10px rgba(0,158,42,0.4); }
+
+.btn-zalo-big { background: #0068ff; color: white; font-size: 16px; }
+.btn-zalo-big:hover { background: #0054cc; }
+
+/* --- TIN LIÊN QUAN --- */
+.sidebar-box { margin-top: 30px; }
+.sidebar-box h3 { font-size: 16px; margin-bottom: 15px; font-weight: 700; }
+.related-list li { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+.rel-item { display: flex; gap: 10px; text-decoration: none; color: #333; }
+.rel-item img { width: 70px; height: 60px; object-fit: cover; border-radius: 4px; }
+.rel-info h5 { font-size: 13px; margin-bottom: 5px; line-height: 1.4; font-weight: 600; }
+.rel-info .price { color: #f73859; font-weight: bold; font-size: 13px; }
+
+/* --- PHẦN ĐÁNH GIÁ --- */
+.reviews-section { background: #f9f9f9; padding: 20px; border-radius: 8px; }
+.review-form textarea { width: 100%; height: 80px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin: 10px 0; }
+.btn-submit-review { background: #055699; color: white; border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; }
+
+.review-item { display: flex; gap: 15px; margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+.rv-avatar { width: 40px; height: 40px; border-radius: 50%; }
+.rv-stars { color: #FFD700; margin-left: 10px; font-size: 12px; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .detail-layout { flex-direction: column; }
+    .main-img-box { height: 250px; }
+    .author-card { position: static; margin-bottom: 30px; }
+} 

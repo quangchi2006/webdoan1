@@ -1,0 +1,31 @@
+trothue/
+├── index.php                  Trang chủ + tìm kiếm
+├── phong-chi-tiet.php         Xem chi tiết
+├── dang-tin.php               Đăng bài (yêu cầu login)
+├── sua-tin.php                Sửa bài
+├── xoa-tin.php                Xóa bài của mình
+├── profile.php                Sửa thông tin cá nhân
+├── dang-ky.php
+├── dang-nhap.php
+├── dang-xuat.php
+├── tim-kiem.php               Xử lý tìm kiếm AJAX
+│
+├── admin/
+│   ├── index.php              Trang quản trị
+│   ├── duyet-bai.php          Kiểm duyệt bài đăngP
+│   ├── quan-ly-nguoi-dung.php
+│   ├── quan-ly-bai-dang.php
+│   └── xoa-bai.php
+│
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── db.php
+│   └── auth.php               Kiểm tra đăng nhập & phân quyền
+│
+├── assets/
+│   ├── css/style.css
+│   ├── js/main.js
+│   └── img/uploads/           (chmod 777)
+│
+└── database/trothue.sql       File SQL đầy đủ

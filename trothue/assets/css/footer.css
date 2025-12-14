@@ -1,0 +1,111 @@
+/* File: assets/css/footer.css */
+
+/* --- KHUNG CHÍNH CỦA FOOTER --- */
+.main-footer {
+    background-color: #2c3e50; /* Màu nền tối */
+    color: #ecf0f1;            /* Màu chữ sáng */
+    padding-top: 50px;
+    margin-top: 60px;          /* Cách phần nội dung bên trên ra */
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- BỐ CỤC CỘT (FLEXBOX) --- */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Tự xuống dòng trên điện thoại */
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;             /* Chia đều không gian */
+    min-width: 250px;    /* Chiều rộng tối thiểu mỗi cột */
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+/* --- TIÊU ĐỀ CỘT --- */
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-left: 4px solid #e67e22; /* Đường viền cam bên trái */
+    padding-left: 10px;
+}
+
+/* --- NỘI DUNG VĂN BẢN --- */
+.footer-section p {
+    line-height: 1.6;
+    color: #bdc3c7;
+    margin-bottom: 15px;
+}
+
+/* --- DANH SÁCH LIÊN KẾT --- */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li a i {
+    margin-right: 10px;
+    color: #e67e22; /* Icon màu cam */
+    width: 20px;
+}
+
+/* Hiệu ứng Hover */
+.footer-section ul li a:hover {
+    color: #e67e22;
+    padding-left: 5px; /* Dịch chuyển nhẹ sang phải */
+}
+
+/* --- MẠNG XÃ HỘI --- */
+.socials {
+    margin-top: 15px;
+}
+
+.socials a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%; /* Hình tròn */
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px); /* Nảy lên nhẹ */
+}
+
+/* --- DÒNG BẢN QUYỀN CUỐI CÙNG --- */
+.footer-bottom {
+    background-color: #1a252f; /* Màu đậm hơn nền chính */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #34495e;
+    color: #7f8c8d;
+}
